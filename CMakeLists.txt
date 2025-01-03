@@ -13,6 +13,8 @@ set ( SOURCE
     ${SRC_DIR}/ray.h
     ${SRC_DIR}/color.h
     ${SRC_DIR}/vec3.h
+    ${SRC_DIR}/hittable.h
+    ${SRC_DIR}/sphere.h
 )
 
 source_group("Source Files" FILES ${SRC_DIR}/main.cpp)
