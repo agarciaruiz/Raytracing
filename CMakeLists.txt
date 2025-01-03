@@ -6,13 +6,18 @@ set ( CMAKE_CXX_STANDARD          17 )
 set ( CMAKE_CXX_STANDARD_REQUIRED ON )
 set ( CMAKE_CXX_EXTENSIONS        OFF )
 
+set(SRC_DIR ${CMAKE_SOURCE_DIR}/src)
+
 set ( SOURCE
-  src/main.cpp
-  src/color.h
-  src/vec3.h
-  src/ray.h
+    ${SRC_DIR}/main.cpp
+    ${SRC_DIR}/ray.h
+    ${SRC_DIR}/color.h
+    ${SRC_DIR}/vec3.h
 )
 
-include_directories(src)
+source_group("Source Files" FILES ${SRC_DIR}/main.cpp)
+source_group("Header Files" FILES ${SRC_DIR}/ray.h ${SRC_DIR}/color.h ${SRC_DIR}/vec3.h)
+
+include_directories(${SRC_DIR})
 
 add_executable(Raytracing ${SOURCE})
