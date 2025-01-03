@@ -14,7 +14,9 @@ set ( SOURCE
     ${SRC_DIR}/color.h
     ${SRC_DIR}/vec3.h
     ${SRC_DIR}/hittable.h
+    ${SRC_DIR}/hittable_list.h
     ${SRC_DIR}/sphere.h
+    ${SRC_DIR}/rtweekend.h
 )
 
 source_group("Source Files" FILES ${SRC_DIR}/main.cpp)
