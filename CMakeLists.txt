@@ -18,6 +18,7 @@ set ( SOURCE
     ${SRC_DIR}/sphere.h
     ${SRC_DIR}/rtweekend.h
     ${SRC_DIR}/interval.h
+    ${SRC_DIR}/camera.h
 )
 
 source_group("Source Files" FILES ${SRC_DIR}/main.cpp)
