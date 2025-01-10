@@ -11,4 +11,5 @@ target_sources(Raytracing PRIVATE
 	rtweekend.h
 	interval.h
 	camera.h
+	material.h
 )
